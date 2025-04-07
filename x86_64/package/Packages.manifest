@@ -1284,6 +1284,22 @@ Size: 391592
 SHA256sum: 287be8079116244e51ddfe8c250487fe0f2c97728db583db2acdd3d92995d397
 Description:  Argon Theme
 
+Package: luci-theme-kucat
+Version: 2.5.8-r20250325
+Depends: libc, luci-lua-runtime
+Source: feeds/oppen321/luci-theme-kucat
+SourceName: luci-theme-kucat
+Section: luci
+SourceDateEpoch: 1743954333
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 1331200
+Filename: luci-theme-kucat_2.5.8-r20250325_all.ipk
+Size: 995519
+SHA256sum: 68a968a99190c259915df1cddf6fd7ff1f8d2c674df13a0038a0770d76bccb63
+Description:  Kucat Theme by sirpdboy
+
 Package: lucky
 Version: 2.15.10-r1
 Depends: libc
