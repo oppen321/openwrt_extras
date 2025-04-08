@@ -75,6 +75,25 @@ Description:  bash-completion is a collection of command line command completion
  collection of helper functions to assist in creating new completions, 
  and set of facilities for loading completions automatically on demand, as well as installing them.
 
+Package: comgt
+Version: 0.32-r36
+Depends: libc, chat
+Source: feeds/base/network/utils/comgt
+SourceName: comgt
+License: GPL-2.0+
+Section: net
+SourceDateEpoch: 1727041388
+URL: http://manpages.ubuntu.com/manpages/trusty/man1/comgt.1.html
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 71680
+Filename: comgt_0.32-r36_x86_64.ipk
+Size: 20458
+SHA256sum: 174dabd8cb8d9e44a75eece6300bfd97e908dd271706903499ce23765e14eb36
+Description:  comgt is a scripting language interpreter useful for establishing 
+ communications on serial lines and through PCMCIA modems as well as GPRS 
+ and 3G datacards.
+
 Package: ddns-scripts-aliyun
 Version: 1.0.3-r6
 Depends: libc, ddns-scripts, curl, jsonfilter, openssl-util
