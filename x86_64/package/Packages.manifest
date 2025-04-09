@@ -347,6 +347,22 @@ Size: 2303
 SHA256sum: 22aa7af4a4a2d325004f18643a31ffafb5c024a6f13f2d30ae6bab05b57da43e
 Description:  LuCI support for floatip
 
+Package: luci-app-hypermodem
+Version: 25.077.52610~11d7587
+Depends: libc, luci-compat, kmod-usb-net, kmod-usb-net-cdc-ether, kmod-usb-acm, kmod-usb-net-qmi-wwan, kmod-usb-net-rndis, kmod-usb-serial-qualcomm, kmod-usb-net-sierrawireless, kmod-usb-ohci, kmod-usb-serial, kmod-usb-serial-option, kmod-usb-wdm, kmod-usb2, kmod-usb3, kmod-usb-net-cdc-mbim, usbutils, luci-proto-qmi, pciutils, kmod-pcie_mhi, quectel-CM-5G, grep, luci-lua-runtime
+Source: feeds/5G_Modem/luci-app-hypermodem
+SourceName: luci-app-hypermodem
+Section: luci
+SourceDateEpoch: 1742308610
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 20480
+Filename: luci-app-hypermodem_25.077.52610~11d7587_all.ipk
+Size: 3666
+SHA256sum: 0e59d2d20bca2837d945c039f28aa5153e2966fab46de060978d10c81f72c264
+Description:  Hyper Modem Server
+
 Package: luci-app-kucat
 Version: 1.1.0-r20250306
 Depends: libc, curl, luci-lua-runtime
@@ -410,6 +426,23 @@ Filename: luci-app-mentohust_1.0.2-r1_all.ipk
 Size: 3087
 SHA256sum: a601fb81de9c213d976e5bdddf0753de8d0197fb4c4a39e4cf46069270d5ac71
 Description:  LuCI support for MentoHUST
+
+Package: luci-app-modem
+Version: 1.4.4-r1
+Depends: libc, luci-compat, kmod-usb2, kmod-usb3, kmod-usb-net-sierrawireless, kmod-usb-ohci, kmod-usb-serial-option, kmod-usb-serial, kmod-usb-serial-qualcomm, kmod-usb-net, kmod-usb-acm, kmod-usb-wdm, kmod-usb-net-qmi-wwan, kmod-usb-net-cdc-ether, kmod-usb-net-cdc-mbim, kmod-usb-net-rndis, kmod-usb-net-cdc-ncm, kmod-usb-net-huawei-cdc-ncm, usbutils, kmod-pcie_mhi, pciutils, quectel-CM-5G, modemmanager, luci-proto-modemmanager, sms-tool, bc, jq, luci-lua-runtime
+Source: feeds/5G_Modem/luci-app-modem
+SourceName: luci-app-modem
+License: GPLv3
+Section: luci
+SourceDateEpoch: 1742308610
+URL: https://github.com/openwrt/luci
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 501760
+Filename: luci-app-modem_1.4.4-r1_all.ipk
+Size: 93619
+SHA256sum: 0df88a13998fe8a408a92105ef3924c86f36c89688ba8b2665fddd9f3c6a835f
+Description:  LuCI support for Modem
 
 Package: luci-app-modemband
 Version: 1.0.25-r20241111
@@ -641,19 +674,19 @@ SHA256sum: 71cbfce71096e1bcbeefd93d534cf9e415a19150761a30200843a107d3d5bc0d
 Description:  luci-app-store is a ipk store developed by LinkEase team
 
 Package: luci-app-taskplan
-Version: 2.2.1-r20250319
+Version: 2.2.2-r20250409
 Depends: libc, luci-lua-runtime
 Source: feeds/extraipk/luci-app-taskplan/luci-app-taskplan
 SourceName: luci-app-taskplan
 Section: luci
-SourceDateEpoch: 1744050020
+SourceDateEpoch: 1744187090
 URL: https://github.com/openwrt/luci
 Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 40960
-Filename: luci-app-taskplan_2.2.1-r20250319_all.ipk
-Size: 6569
-SHA256sum: 65f7b431340e91d1526cef9d85f447e6a2cdf659fe349103a245d36e8d5d1eb7
+Filename: luci-app-taskplan_2.2.2-r20250409_all.ipk
+Size: 6494
+SHA256sum: 698a73c7ec5543cea31cc1d267fe554921fbd34f3aa3ababd2d90eecd147465d
 Description:  LuCI support for Task Plan setting
 
 Package: luci-app-usb-printer
@@ -924,6 +957,21 @@ Size: 1988
 SHA256sum: 723749078252bdd2d2185882a9f406c81a26e2d7810a69f0d314c8adf1485c8c
 Description:  Translation for luci-app-mentohust - 简体中文 (Chinese Simplified)
 
+Package: luci-i18n-modem-zh-cn
+Version: 25.077.52610~11d7587
+Depends: libc, luci-app-modem
+Source: feeds/5G_Modem/luci-app-modem
+SourceName: luci-app-modem
+License: GPLv3
+Section: luci
+SourceDateEpoch: 1742308610
+Architecture: all
+Installed-Size: 20480
+Filename: luci-i18n-modem-zh-cn_25.077.52610~11d7587_all.ipk
+Size: 5134
+SHA256sum: f5acb9ddd2082403f5b302af9ac080b8c0b0324d49b47378765a2a50b2793fb7
+Description:  Translation for luci-app-modem - 简体中文 (Chinese Simplified)
+
 Package: luci-i18n-modemband-zh-cn
 Version: 25.097.66020~cc0e360
 Depends: libc, luci-app-modemband
@@ -1123,12 +1171,12 @@ Depends: libc, luci-app-taskplan
 Source: feeds/extraipk/luci-app-taskplan/luci-app-taskplan
 SourceName: luci-app-taskplan
 Section: luci
-SourceDateEpoch: 1744050020
+SourceDateEpoch: 1744187090
 Architecture: all
 Installed-Size: 10240
 Filename: luci-i18n-taskplan-zh-cn_25.097.66020~cc0e360_all.ipk
-Size: 2135
-SHA256sum: f57020a5f19353491855fb0f64a7d370cbdf9eb4cb92d4b8a3df869710964566
+Size: 2133
+SHA256sum: d7dc975150d633ab42370976fec4b5f12dea7612975e8db462a47e7962385683
 Description:  Translation for luci-app-taskplan - 简体中文 (Chinese Simplified)
 
 Package: luci-i18n-usb-printer-zh-cn
@@ -1350,6 +1398,20 @@ Filename: natflow_20241020_x86_64.ipk
 Size: 1695
 SHA256sum: 14e43b21919ec3c613db9c9821e6025b174edca93488cfe9d2ce040f73d7f13e
 Description:  Natflow init script
+
+Package: quectel-CM-5G
+Version: 1.6.4-r1
+Depends: libc
+Source: feeds/5G_Modem/quectel_cm_5G
+SourceName: quectel-CM-5G
+Section: utils
+SourceDateEpoch: 1742308610
+Architecture: x86_64
+Installed-Size: 225280
+Filename: quectel-CM-5G_1.6.4-r1_x86_64.ipk
+Size: 77681
+SHA256sum: dbb2aadae1bfaa8bbabea08f5b52bee8949e04717c75000bbb0e62e84d2dc30a
+Description:  quectel-CM-5G app
 
 Package: quickstart
 Version: 0.9.8-r1
